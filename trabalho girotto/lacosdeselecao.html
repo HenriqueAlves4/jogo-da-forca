@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Seleção em C</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #666;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+        .botao-container {
+            text-align: center;
+        }
+        .botao {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .botao:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laços de Seleção em C</h1>
+    <p>Em C, os laços de seleção permitem que o programa faça escolhas com base em condições específicas. Os principais laços de seleção são <code>if</code>, <code>else if</code> e <code>else</code>.</p>
+    
+    <h2>if</h2>
+    <p>O laço <code>if</code> é usado para executar um bloco de código se uma condição for verdadeira. Por exemplo:</p>
+    <pre>
+        <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int idade = 20;
+    if (idade >= 18) {
+        printf("Você é maior de idade.\n");
+    }
+    return 0;
+}
+        </code>
+    </pre>
+    
+    <h2>else if</h2>
+    <p>O laço <code>else if</code> permite adicionar condições adicionais após um <code>if</code> inicial. Ele é usado quando há mais de uma condição que precisa ser verificada. Por exemplo:</p>
+    <pre>
+        <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int nota = 75;
+    if (nota >= 90) {
+        printf("Você tirou A.\n");
+    } else if (nota >= 80) {
+        printf("Você tirou B.\n");
+    } else if (nota >= 70) {
+        printf("Você tirou C.\n");
+    } else {
+        printf("Você tirou D ou F.\n");
+    }
+    return 0;
+}
+        </code>
+    </pre>
+    
+    <h2>else</h2>
+    <p>O laço <code>else</code> é usado para executar um bloco de código se a condição de um <code>if</code> ou de um <code>else if</code> anterior for falsa. Por exemplo:</p>
+    <pre>
+        <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int idade = 15;
+    if (idade >= 18) {
+        printf("Você é maior de idade.\n");
+    } else {
+        printf("Você é menor de idade.\n");
+    }
+    return 0;
+}
+        </code>
+    </pre>
+    
+    <p>Estes são exemplos básicos de como usar os laços de seleção em C. Eles são fundamentais para tomar decisões dentro de um programa com base em condições específicas.</p>
+    <div class="botao-container">
+        <a href="jogodaforca.html" class="botao">Jogar Jogo da Forca</a>
+    </div>
+</body>
+</html>
